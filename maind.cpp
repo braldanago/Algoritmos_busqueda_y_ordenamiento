@@ -85,7 +85,7 @@ char menuBuscar(){//MENU BUSQUEDA //////////////////
 	return opcion;
 }
 
-char menuOrdenar(){//MENU BUSQUEDA //////////////////
+char menuOrdenar(){//MENU ORDENAMIENTO //////////////////
     char opcion;
 	cout<<"Bienvenido, seleccione un metodo para ordenar: \n"<<endl;
 	cout<<"(B)urbuja"<<endl;
@@ -273,6 +273,9 @@ int Arreglo::quickSort(int izq, int der,int &op){//QUICK SORT //////
     return op;
 }
 
+/*
+Ordenamiento con el algoritmo MergeSort
+*/
 int Arreglo::mergeSort(int p,int r){
 	int q,op=0;
     if(p<r){
@@ -315,11 +318,6 @@ int Arreglo::mergeSort2(int p,int q,int r){
     }
     return op;
 }
-
-
-
-
-
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
